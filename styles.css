@@ -1,0 +1,14 @@
+.bg-segment {
+  width: 100%;
+  background-size: cover;
+}
+
+.centered-img {
+  width: 100%; 
+  position: absolute;
+  transform: translate(0, -50%);
+}
+
+.row {
+  text-align: center;
+}

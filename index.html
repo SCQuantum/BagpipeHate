@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Title of the document</title>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="position: fixed; width: 100%; z-index: 9999;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#history">History</a>
+                <a class="nav-item nav-link disabled" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="main">
+            <a name="about"></a>
+
+            <!-- Credits/Space -->
+            <div class="bg-segment" style="height: 1228px; background-image: url(imgs/space-bg.png);"></div>
+            <img class="centered-img" src="imgs/cloud-vw.png"  style="height: 500px; min-height: 500px;">
+            
+            <a name="home"></a>
+
+            <!-- About/Land -->
+            <div class="bg-segment" style="height: 1750px; background-image: url(imgs/sky-bg.png);">
+                <div class="container" style="z-index: 9998; padding-top: 350px;">
+                    <h1 style="text-align: center;">About Us</h2>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3>We care about Scotland</h3>
+                        <p>Every day, Scotland's future is being threatened by not a silent killer, but a very loud and obnoxious one. The bagpipe.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <h3>What do they do?</h3>
+                        <p>While they may seem harmless enough, bagpipes actually do threaten the future of our great nation by harming the ears of the unfortunate soul foolish enough to go within a 2 mile vicinity of the "instrument".</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <img class="centered-img" src="imgs/mountain-vw.png"  style="transform: translate(0, -40%); height: 1500px;">
+            
+            <div style="height: 400px; width: 100%;"></div>
+
+            <a name="history"></a>
+
+            <!-- History/Underground -->
+            <div class="bg-segment" style="height: 1000px; background-image: url(imgs/cave-bg.png);"></div>
+            <img class="centered-img" src="imgs/cavefloor-vw.png"  style="transform: translate(0, -40%); height: 500px; min-height: 500px;">
+            
+            <a name="contact"></a>
+
+            <!-- Contact/Heck -->
+            <div class="bg-segment text-light" style="height: 1300px; background-image: url(imgs/heck-bg.png);">
+              <div class="container" style="z-index: 9998; padding-top: 350px;">
+                <h1 style="text-align: center;">Contact Us</h2>
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Send us your e-mail so that we can keep you updated on the state of the movement!</p>
+                  </div>
+                  <div class="form-group" style="margin: auto;">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
