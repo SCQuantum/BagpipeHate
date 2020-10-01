@@ -1,11 +1,12 @@
 .bg-segment { 
   width: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .centered-img { 
   width: 100%;
   position: absolute;
+  display: block;
   transform: translate(0, -50%);
 }
 
