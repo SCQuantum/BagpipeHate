@@ -8,7 +8,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="position: fixed; width: 100%; z-index: 9999;">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Bagpipe Hate Inc.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -17,7 +17,7 @@
                 <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#about">About</a>
                 <a class="nav-item nav-link" href="#history">History</a>
-                <a class="nav-item nav-link disabled" href="#contact">Contact</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </nav>
@@ -27,8 +27,7 @@
 
             <!-- Credits/Space -->
             <div class="bg-segment" style="height: 1228px; background-image: url(imgs/space-bg.png);"></div>
-            <img class="centered-img rellax" src="imgs/cavefloor-vw.png" data-rellax-speed="7" data-rellax-percentage="0.1" style="height: 500px; min-height: 500px;">
-            <img class="centered-img" src="imgs/cloud-vw.png"  style="height: 500px; min-height: 500px;">
+            <img class="centered-img" src="imgs/cloud-vw.png" style="height: 500px; min-height: 500px;">
             
             <a name="home"></a>
 
@@ -49,19 +48,24 @@
                     </div>
                   </div>
             </div>
-            <img class="centered-img" src="imgs/mountain-vw.png"  style="transform: translate(0, -40%); height: 558px; z-index: 500;">
+            <img class="centered-img rellax" src="imgs/mountain-2-vw.png" data-rellax-speed="0" data-rellax-percent="0.9" style="transform: translate(0, -100%); z-index: 500;">
+            <img class="centered-img rellax" src="imgs/grass-2-vw.png" data-rellax-speed="2" data-rellax-percent="0.1" style="transform: translate(0, -70%); z-index: 500;">
+            <img class="centered-img rellax" src="imgs/grass-1-vw.png" data-rellax-speed="4" data-rellax-percent="0.1" style="transform: translate(0, 30%); z-index: 500;">
+            <img class="centered-img" src="imgs/mountain-vw.png" style="transform: translate(0, -40%); height: 558px; z-index: 500;">
             
+            <!-- Utility div -->>
             <div style="height: 400px; width: 100%;"></div>
 
-            <a name="history"></a>
 
             <!-- History/Underground -->
+            <a name="history"></a>
+
             <div class="bg-segment" style="height: 1000px; background-image: url(imgs/cave-bg.png); transform: translateY(-225px); z-index: 9998;"></div>
-            <img class="centered-img" src="imgs/cavefloor-vw.png"  style="transform: translate(0, -40%); height: 1000px; min-height: 500px;">
-            
-            <a name="contact"></a>
+            <img class="centered-img rellax" src="imgs/cavefloor-vw.png" data-rellax-speed="2" data-rellax-percent="0.1" style="transform: translate(0, -70%); z-index: 500;">
 
             <!-- Contact/Heck -->
+            <a name="contact"></a>
+
             <div class="bg-segment text-light" style="height: 1300px; background-image: url(imgs/heck-bg.png);">
               <div class="container" style="z-index: 9998; padding-top: 350px;">
                 <h1 style="text-align: center;">Contact Us</h2>
@@ -79,6 +83,9 @@
               </div>
             </div>
         </div>
+
+
+
 
         <!-- Rellax parallax-->>
         <script src="rellax.min.js"></script>
