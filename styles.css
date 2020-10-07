@@ -10,6 +10,16 @@
   transform: translate(0, -50%);
 }
 
+.centered-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .row {
   text-align: center;
+}
+
+#gallery {
+  padding: 20px;
 }
