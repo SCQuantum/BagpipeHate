@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <script src="p5.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -41,61 +43,59 @@
 
     <!-- About/Land -->
     <div class="bg-segment" style="height: 1750px; background-image: url(imgs/sky-bg.png);">
-      <div class="container" style="z-index: 2; padding-top: 350px;  position: relative;">
-        <h1 style="text-align: center;">About Us</h2>
-          <br>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>We care about Scotland</h3>
-              <p>Every day, Scotland's future is being threatened by not a silent killer, but a very loud and obnoxious
-                one. The bagpipe.</p>
-            </div>
-            <div class="col-md-6">
-              <h3>What do they do? Or what they don't do...</h3>
-              <p>While they may seem harmless enough, bagpipes actually do threaten the future of our great nation by
-                harming the ears of the unfortunate soul foolish enough to go within a 2 mile vicinity of the
-                "instrument".</p>
+      <div class="container" style="padding-top: 350px;  position: relative; z-index: 80;">
+        <h1 style="text-align: center;">About Us</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>The beauty of Scotland</h2>
+            <p>Scotland</p>
+          </div>
+          <div class="col-md-6">
+            <h2>Scottish Lowlands</h2>
+            <p>Scotland can be described with one color: green. From the green hills, to the green of a leprecauns</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>We care about Scotland</h2>
+            <p>Every day, Scotland's future is being threatened by not a silent killer, but a very loud and obnoxious
+              one. The bagpipe.</p>
+          </div>
+          <div class="col-md-6" >
+            <h2>What do they do? Or what they don't do...</h2>
+            <p>While they may seem harmless enough, bagpipes actually do threaten the future of our great nation by
+              harming the ears of the unfortunate soul foolish enough to go within a 2 mile vicinity of the
+              "instrument".</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-4 box-shadow" style="height: 300px; width: 500px; margin: auto; z-index: 2;">
+              <img class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg">
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h3>We care about Scotland</h3>
-              <p>Every day, Scotland's future is being threatened by not a silent killer, but a very loud and obnoxious
-                one. The bagpipe.</p>
-            </div>
-            <div class="col-md-6">
-              <h3>What do they do? Or what they don't do...</h3>
-              <p>While they may seem harmless enough, bagpipes actually do threaten the future of our great nation by
-                harming the ears of the unfortunate soul foolish enough to go within a 2 mile vicinity of the
-                "instrument".</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="imgs/grass-1-vw.png">
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
     <img class="centered-img rellax" src="imgs/mountain-2-vw.png" data-rellax-speed="-4" data-rellax-percent="0.9"
-      style="transform: translate(0, -170%);">
+      style="transform: translate(0, -170%); z-index: 1;">
     <img class="centered-img rellax" src="imgs/mountain-1-vw.png" data-rellax-speed="-1" data-rellax-percent="0.9"
-      style="transform: translate(0, -150%);">
+      style="transform: translate(0, -150%); z-index: 3;">
     <img class="centered-img rellax" src="imgs/grass-2-vw.png" data-rellax-speed="1" data-rellax-percent="0.1"
-      style="transform: translate(0, -80%);">
-    <img class="centered-img rellax" src="imgs/grass-1-vw.png" data-rellax-speed="4" data-rellax-percent="0.1"
-      style="transform: translate(0, 100%);">
+      style="transform: translate(0, -80%); z-index: 4;">
+    <img class="centered-img rellax" src="imgs/grass-1-vw.png" data-rellax-speed="3" data-rellax-percent="0.1"
+      style="transform: translate(0, 30%); z-index: 5;">
     <img class="centered-img rellax" src="imgs/mountain-vw.png" data-rellax-speed="8" data-rellax-percent="0.1"
-      style="transform: translate(0, 200%); height: 558px;">
+      style="transform: translate(0, 200%); z-index: 6; height: 558px;">
 
 
 
     <!-- History/Underground -->
     <a name="gallery"></a>
 
-    <div class="bg-segment centered-box" style="height: 1500px; background-image: url(imgs/cave-bg.png);">
+    <div class="bg-segment centered-box" style="height: 2000px; background-image: url(imgs/cave-bg.png);">
       <div class="album py-5">
         <div class="container">
           <div class="row">
@@ -109,6 +109,9 @@
                 <img class="card-img-top" src="imgs/lava-vw.png" alt="Card image cap">
               </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" id="p5-canvas"></div>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -126,7 +129,7 @@
       </div>
     </div>
     <img class="centered-img rellax" src="imgs/mushroom-vw.png" data-rellax-speed="2" data-rellax-percent="0.1"
-      style="transform: translate(0, -70%);">
+      style="transform: translate(0, -30%);">
     <img class="centered-img rellax" src="imgs/cavefloor-vw.png" data-rellax-speed="6" data-rellax-percent="0.1"
       style="transform: translate(0, 110%);">
 
@@ -153,9 +156,6 @@
 
     <!-- <img class="centered-img rellax" src="imgs/lava-vw.png" data-rellax-speed="8" data-rellax-percent="0.1" style="transform: translate(0, 100%); z-index: 500;"> -->
   </div>
-
-
-
 
   <!-- Rellax parallax-->
   <script src="rellax.min.js"></script>
