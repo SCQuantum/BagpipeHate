@@ -1,14 +1,14 @@
 let colors = [[92,255,130], // Green
               [255,145,0], // Orange
               [238,242,0], // Yellow
-              [255,255,255], // White
               [255,25,25], // Red
-              [66,135,245], // Blue
-              [156,126,75],
-              [0,0,0]];
+              [255,255,255], // White
+              [0,0,0], // Black
+              [156,126,75], // Brown
+              [66,135,245]]; // Blue/eraser
 
 let lineColor = 0;
-let colorSize = 50;
+let colorSize = 20;
 let lineWeight = 12;
 var dist = 0;
 
@@ -29,6 +29,7 @@ let sketch = function(p) {
     dist = p.height / colors.length;
 
     for (let i = 0; i < colors.length; i++) {
+      p.stroke(colors[i]);
       p.fill(colors[i]);
       p.rect(0,i*(p.height / colors.length),colorSize,(p.height / colors.length));
     }
