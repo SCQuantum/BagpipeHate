@@ -1,12 +1,18 @@
+#main {
+  width: 100%;
+  position: relative;
+}
+
 .bg-segment { 
   width: 100%;
   background-size: 100% 100%;
 }
 
 .centered-img {
+  min-height: initial;
+  max-height: initial;
   width: 100%;
   position: absolute;
-  display: block;
   transform: translate(0, -50%);
 }
 
