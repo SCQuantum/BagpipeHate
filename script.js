@@ -21,6 +21,9 @@ function generateRandString(length) {
   return string;
 }
 
+var btn = document.getElementById("photo-save");
+
+
 let sketch = function(p) {
   p.setup = function(){
     p.createCanvas(400, 400);
@@ -28,13 +31,15 @@ let sketch = function(p) {
 
     dist = p.height / colors.length;
 
+    p.strokeWeight(lineWeight);
+  }
+
+  p.draw = function() {
     for (let i = 0; i < colors.length; i++) {
       p.stroke(colors[i]);
       p.fill(colors[i]);
       p.rect(0,i*(p.height / colors.length),colorSize,(p.height / colors.length));
     }
-
-    p.strokeWeight(lineWeight)
   }
 
   p.touchMoved = function() {
