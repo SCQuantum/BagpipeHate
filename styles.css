@@ -29,3 +29,21 @@
 #gallery {
   padding: 20px;
 }
+
+#aboutBox {
+  padding: 0%;
+  background-color: #0065BF;
+}
+#aboutBox h2{
+  background-color: white;
+  width: 100%;
+  margin: 0px;
+}
+#aboutBox p{
+  color: white;
+}
+@font-face {
+  font-family: clouds;
+  src: url(fonts/CloudsOfHopeLsf-xoY0.ttf);
+}
+ 
