@@ -16,6 +16,10 @@
   transform: translate(0, -50%);
 }
 
+.card-img-top {
+  height: 350px;
+}
+
 .centered-box {
   display: flex;
   flex-direction: column;
