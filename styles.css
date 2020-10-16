@@ -35,19 +35,39 @@
 }
 
 #aboutBox {
-  padding: 0%;
-  background-color: #0065BF;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 1000%;
 }
 #aboutBox h2{
   background-color: white;
   width: 100%;
   margin: 0px;
+  height: 50px;
 }
 #aboutBox p{
   color: white;
+  background-color: #0065BF;
+  height: 100px;
 }
 @font-face {
   font-family: clouds;
   src: url(fonts/CloudsOfHopeLsf-xoY0.ttf);
 }
- 
+
+#cavebox {
+  margin: 0px;
+  padding: 5px;
+  border-radius: 1000%; 
+}
+#cavebox h2{
+  background-color: rgba(104, 61, 56, 0.892);
+  width: 100%;
+  margin: 0px;
+  height: 50px;
+}
+#cavebox p{
+  color: white;
+  background-color: #6a372e74;
+  height: 100px;
+}
