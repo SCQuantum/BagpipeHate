@@ -39,14 +39,14 @@ let sketch = function(p) {
     p.strokeWeight(lineWeight);
 
     btn = document.getElementById("photo-save");
-    btn.addEventListener("click", function() { p.test() });
+    btn.addEventListener("click", function() { p.saveFile() });
 
     var randText = document.getElementById("rand-text");
-    randText.innerHTML = generateRandString(10000);
+    randText.innerHTML = "Random Generated Text: \n";
+    randText.innerHTML += generateRandString(100000);
   }
 
   p.draw = function() {
-    
 
     for (let i = 0; i < colors.length; i++) {
       p.stroke(colors[i]);
@@ -71,8 +71,7 @@ let sketch = function(p) {
     }
   }
 
-  p.test = function() {
-    console.log("yooooo");
+  p.saveFile = function() {
     p.save('leppy.png')
   }
 

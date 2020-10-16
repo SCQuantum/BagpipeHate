@@ -37,18 +37,21 @@
 #aboutBox {
   margin: 0px;
   padding: 5px;
-  border-radius: 1000%;
 }
 #aboutBox h2{
   background-color: white;
   width: 100%;
   margin: 0px;
   height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 #aboutBox p{
   color: white;
-  background-color: #0065BF;
+  background-color: #0066bf98;
   height: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 @font-face {
   font-family: clouds;
