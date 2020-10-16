@@ -15,16 +15,21 @@ var dist = 0;
 
 function generateRandString(length) {
   let string = "";
+  let alpha = "abcdefghijklmnopqrstuvwxyz   1234567890~`_-=+*/?<>';':][{}|"
   for (let i = 0; i < length; i++) {
-    string = string + Math.random().toString(10);
+    string += alpha.charAt(Math.floor(Math.random() * alpha.length));
+    if (i % 10 == 0) {
+      string += "\n";
+    }
   }
   return string;
 }
 
-var btn = document.getElementById("photo-save");
-
 
 let sketch = function(p) {
+
+  var btn = document.getElementById("photo-save");
+
   p.setup = function(){
     p.createCanvas(400, 400);
     p.background(66, 135, 245);
@@ -32,9 +37,17 @@ let sketch = function(p) {
     dist = p.height / colors.length;
 
     p.strokeWeight(lineWeight);
+
+    btn = document.getElementById("photo-save");
+    btn.addEventListener("click", function() { p.test() });
+
+    var randText = document.getElementById("rand-text");
+    randText.innerHTML = generateRandString(10000);
   }
 
   p.draw = function() {
+    
+
     for (let i = 0; i < colors.length; i++) {
       p.stroke(colors[i]);
       p.fill(colors[i]);
@@ -57,6 +70,12 @@ let sketch = function(p) {
       lineColor = clickedSlot;
     }
   }
+
+  p.test = function() {
+    console.log("yooooo");
+    p.save('leppy.png')
+  }
+
+  
 };
   new p5(sketch, 'p5-canvas');
-
